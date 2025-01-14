@@ -13,7 +13,25 @@ import mongodbicon from "../../assets/icons/mongoicon.svg";
 import vuejsicon from "../../assets/icons/vueicon.svg";
 import expressicon from "../../assets/icons/expressicon.svg";
 import sassscssicon from "../../assets/icons/sassicon.svg";
-import trelloicon from "../../assets/icons/trelloicon.svg";
+import trelloicon from "../../assets/icons/django-svg.svg";
+import djangoSvg from "../../assets/icons/django-svg.svg";
+import python from "../../assets/icons/python.svg";
+import websocket from "../../assets/icons/websocket.svg";
+import slack from "../../assets/icons/slack-new-logo.svg";
+import calendar from "../../assets/icons/calendly.svg";
+import sqlite from "../../assets/icons/sqlite.svg";
+import djangoChannels from "../../assets/icons/django.svg";
+import postgreSql from "../../assets/icons/postgresql.svg";
+import redis from "../../assets/icons/redis.svg";
+import flask from "../../assets/icons/flask.svg";
+import nginix from "../../assets/icons/nginx-1.svg";
+import gitlab from "../../assets/icons/gitlab-wordmark-1.svg";
+import github from "../../assets/icons/github.svg";
+import pycharm from "../../assets/icons/pycharm.svg";
+import vscode from "../../assets/icons/vscode.svg";
+
+
+
 import apiicon from "../../assets/icons/apiicon.svg";
 import axiosicon from "../../assets/icons/axiosicon.svg";
 import spotifyicon from "../../assets/icons/spotifyicon.svg";
@@ -23,9 +41,10 @@ import jwticon from "../../assets/icons/jwticon.svg";
 import wordpressicon from "../../assets/icons/wordpressicon.svg";
 import shopifyicon from "../../assets/icons/shopifyicon.svg";
 import webflowicon from "../../assets/icons/webflowicon.svg";
-import tastyMockup from "../../assets/img/tasty_mockup.webp";
+import tastyMockup from "../../assets/img/tasty_mockup.png";
 import instorMockup from "../../assets/img/instor_mockup.webp";
 import silentmoonMockup from "../../assets/img/silentmoon_mockup.webp";
+import comingSoon from "../../assets/img/coming_soon.jpg";
 import profilepicture from "../img/me2.webp";
 import caricon from "../../assets/icons/car-icon.svg";
 import travelicon from "../../assets/icons/travel-icon.svg";
@@ -36,16 +55,19 @@ import { GoHome, GoPerson, GoMail, GoStack, GoProject } from "react-icons/go";
 import { FiGithub, FiLink, FiLinkedin, FiMail } from "react-icons/fi";
 import Imprint from "../../components/Imprint";
 import Privacy from "../../components/Privacy";
+import { icons } from "react-icons/lib";
 
 export const headerIntroData = {
   title: {
-    de: "Hi, ich bin Alpay",
-    en: "Hi, I'm Alpay",
+    de: "Hi, ich bin Vishal",
+    en: "Hi, I'm Vishal",
+    
   },
-  subtitle: "Fullstack Developer ",
+  subtitle: "Django Developer ",
   description: {
-    de: "Ich bin Alpay, ein Fullstack-Entwickler mit dem Ziel, meine Karriere voranzutreiben und an inspirierenden Projekten teilzunehmen. Hier präsentiere ich meine Arbeiten und meine Leidenschaft für die Webentwicklung. Lassen Sie uns gemeinsam digitale Lösungen gestalten und die Zukunft formen!",
-    en: "I'm Alpay, a fullstack developer with the goal of advancing my career and participating in inspiring projects. Here I present my work and my passion for web development. Let's shape digital solutions together and shape the future!",
+    de: "Ich bin Vishal, ein Backend-Entwickler mit dem Ziel, meine Karriere voranzutreiben und an inspirierenden Projekten teilzunehmen. Hier präsentiere ich meine Arbeiten und meine Leidenschaft für die Webentwicklung. Lassen Sie uns gemeinsam digitale Lösungen gestalten und die Zukunft formen!",
+    en: "I'm Vishal, a backend developer with the goal of advancing my career and participating in inspiring projects. Here I present my work and my passion for web development. Let's shape digital solutions together and shape the future!"
+    
   },
   buttons: [
     {
@@ -72,11 +94,12 @@ export const headerIntroData = {
 
 export const projectsData = [
   {
-    title: "Tasty App",
+    title: "Calendar Plus",
     description:
-      "Eine Rezepte App, die wir als Team mit React und der MealDB API gebaut haben. Ich war der Front-End Entwickler und habe Features wie Voice Search oder Print to PDF programmiert. Das Design wurde mit Figma erstellt. Die Website ist responsive und mobile-optimiert.",
+      "Calendar Plus ist eine fortschrittliche Kalender-App, die ich entwickelt habe, um die Funktionalitäten führender Tools wie Calendly, Slack und Any.do zu vereinen und eine nahtlose Benutzererfahrung zu bieten. Als Haupt-Backend-Entwickler habe ich Echtzeit-Kollaborationsfunktionen implementiert, um Benutzern das Planen und Verwalten von Meetings in Echtzeit zu ermöglichen. Darüber hinaus habe ich eine benutzerfreundliche Schnittstelle entwickelt, die eine nahtlose Integration in den Arbeitsalltag ermöglicht, mit Funktionen wie der automatischen Zeitzonenanpassung und einer intelligenten Benachrichtigungssteuerung. Diese App wurde mit modernsten Technologien entwickelt, um sowohl die Benutzererfahrung als auch die Leistung zu maximieren.",
     description_EN:
-      "A recipe app that we built as a team with React and the MealDB API. I was the front-end developer and programmed features like voice search or print to PDF. The design was created with Figma. The website is responsive and mobile-optimized.",
+        "Calendar Plus is an advanced calendar app I developed to combine the functionalities of leading tools like Calendly, Slack, and Any.do, providing a seamless user experience. As the lead backend developer, I implemented real-time collaboration features to allow users to schedule and manage meetings in real time. In addition, I developed a user-friendly interface that enables seamless integration into everyday work, with features like automatic time zone adjustment and smart notification control. This app was built using cutting-edge technologies to maximize both user experience and performance.",
+
     technologies: [
       { name: "Html", icon: htmlicon },
       { name: "CSS", icon: cssicon },
@@ -86,11 +109,18 @@ export const projectsData = [
       { name: "Figma", icon: figmaicon },
       { name: "Canva", icon: canvaicon },
       { name: "Netlify", icon: netlifyicon },
-      { name: "Trello", icon: trelloicon },
+      { name: "Django", icon: djangoSvg },
+      {name: "Python", icon: python},
+      {name: "Websockets" , icon: websocket},
+      {name:"Slack", icon:slack},
+      {name: "Calendar", icon: calendar},
+      {name: "Sqlite3", icon: sqlite},
+      {name: "Django-Rest-Framework", icon:djangoChannels},
+
     ],
     image: tastyMockup,
-    deploymenturl: "https://delightful-cheesecake-9b19f0.netlify.app/",
-    githuburl: "https://github.com/AlpayC/Frontend_Abschlussprojekt_Tasty",
+    deploymenturl: "#",
+    githuburl: "https://github.com/nota63/CalendarPlus",
     githubicon: FiGithub,
     deploymenticon: FiLink,
     colors: {
@@ -100,30 +130,32 @@ export const projectsData = [
       projectcolor: "#70B9BE",
     },
   },
+
   {
-    title: "Silentmoon",
+    title: " GuessMaster: A Real-Time Word Guessing Challenge with Django Channels  ",
     description:
       "Eine Yoga und Meditations App, die wir als Team mit React, MongoDB, Express und Node.js gebaut haben. Meine Aufgabe als Gitmaster und Backend Entwickler bestand darin, das Backend mit Anbindung anhand einer Restful API zu programmieren und die Datenbank in MongoDB zu modellieren.",
-    description_EN:
-      "A yoga and meditation app that we built as a team with React, MongoDB, Express and Node.js. My task as a gitmaster and backend developer was to program the backend with connection using a restful API and to model the database in MongoDB.",
-    technologies: [
+    description_EN: " GuessMaster: A Real-Time Word Guessing Challenge with Django Channels  GuessMaster is an interactive, real-time word-guessing game built with Django Channels. The admin creates a room, sets a target word, and invites users. Once the challenge begins, participants race to guess the word. Points are awarded based on the speed of the correct guesses: 50 points for first, 30 points for second, and 10 points for third. The use of WebSockets ensures seamless real-time communication, making this a dynamic multiplayer experience with an exciting leaderboard.", 
+
+             
+        technologies: [
       { name: "Html", icon: htmlicon },
       { name: "CSS", icon: cssicon },
       { name: "JavaScript", icon: javascripticon },
-      { name: "Spotify Api", icon: spotifyicon },
-      { name: "React", icon: reacticon },
+      {name: "Django", icon: djangoSvg},
+      {name: "Websockets", icon: websocket},
+      {name: "Python", icon: python},
+      {name: "Sqlite3", icon: sqlite},
+      {name: "Django-Rest-Framework", icon:djangoChannels},
       { name: "JWT & Bcrypt", icon: jwticon },
       { name: "Axios", icon: axiosicon },
-      { name: "MongoDB", icon: mongodbicon },
-      { name: "Express", icon: expressiconwhite },
-      { name: "Node.js", icon: nodejsicon },
       { name: "Figma", icon: figmaicon },
-      { name: "Render", icon: rendericon },
     ],
-    image: silentmoonMockup,
-    deploymenturl: "https://silentmoon-grpw.onrender.com/",
+    image: comingSoon,
+
+    deploymenturl: "#",
     githuburl:
-      "https://github.com/AlpayC/Fullstack_Abschlussprojekt_SilentMoon",
+      "https://github.com/nota63/challenge",
     githubicon: FiGithub,
     deploymenticon: FiLink,
     colors: {
@@ -154,8 +186,8 @@ export const projectsData = [
       { name: "Trello", icon: trelloicon },
     ],
     image: instorMockup,
-    deploymenturl: "https://mern-haushaltsbuch.onrender.com/",
-    githuburl: "https://github.com/AlpayC/Furniture_MERN",
+    deploymenturl: "#",
+    githuburl: "#",
     githubicon: FiGithub,
     deploymenticon: FiLink,
     colors: {
@@ -197,57 +229,57 @@ export const skillsDataWeb = [
         color: "#F7DF1E",
       },
       {
-        title: "TypeScript",
-        hash: "#TypeScript",
-        icon: typescripticon,
+        title: "Django",
+        hash: "#Django",
+        icon: djangoSvg,
         color: "#007ACC",
       },
       {
-        title: "React",
-        hash: "#React",
-        icon: reacticon,
+        title: "Rest framework",
+        hash: "#Rest-framework",
+        icon: djangoChannels,
         color: "#61DAFB",
       },
       {
-        title: "Next.js",
-        hash: "#Next.js",
-        icon: [nextjsicon, nextjsiconwhite],
+        title: "Python",
+        hash: "#Python",
+        icon: python,
         color: ["#000000", "#FFFFFF"],
       },
       {
-        title: "Node.js",
-        hash: "#Node.js",
-        icon: nodejsicon,
+        title: "Postgresql",
+        hash: "#Postgresql",
+        icon: postgreSql,
         color: "#339933",
       },
       {
-        title: "Tailwind",
-        hash: "#Tailwind",
-        icon: tailwindcssicon,
+        title: "Github",
+        hash: "#github",
+        icon: github,
         color: "#38B2AC",
       },
       {
-        title: "MongoDB",
-        hash: "#MongoDB",
-        icon: mongodbicon,
+        title: "Redis",
+        hash: "#redis",
+        icon: redis,
         color: "#449C45",
       },
       {
-        title: "Vue.js",
-        hash: "#Vue.js",
-        icon: vuejsicon,
+        title: "Flask",
+        hash: "#flask",
+        icon: flask,
         color: "#4FC08D",
       },
       {
-        title: "Express",
-        hash: "#Express",
-        icon: [expressicon, expressiconwhite],
+        title: "Nginix",
+        hash: "#Nginix",
+        icon: nginix,
         color: ["#000000", "#FFFFFF"],
       },
       {
-        title: "SASS/SCSS",
-        hash: "#SASS/SCSS",
-        icon: sassscssicon,
+        title: "Gitlab",
+        hash: "#Gitlab",
+        icon: gitlab,
         color: "#CC6699",
       },
     ],
@@ -256,16 +288,16 @@ export const skillsDataWeb = [
 
 export const skillsDataDesign = [
   {
-    skillsTitle: "Design",
+    skillsTitle: "Tools",
     skills: [
-      { title: "Figma", hash: "#Figma", icon: figmaicon, color: "#F24E1E" },
+      { title: "Pycharm", hash: "#Pycharm", icon: pycharm, color: "#F24E1E" },
       {
-        title: "Adobe XD",
-        hash: "#Adobe XD",
-        icon: adobexdicon,
+        title: "Vs code",
+        hash: "#Vs code",
+        icon: vscode,
         color: "#FF61F6",
       },
-      { title: "Canva", hash: "#Canva", icon: canvaicon, color: "#00C4CC" },
+    
     ],
   },
 ] as const;
@@ -310,23 +342,23 @@ export const FooterLinks = [
 ] as const;
 
 export const sideBarRightMail = {
-  link: "mailto:myemail@com",
+  link: "mailto:vishaldudhabarve105@gmail.com",
   text: "myemail@com",
 } as const;
 
 export const sideBarLeftSocials = [
   {
-    link: "https://www.linkedin.com/in/alpay/",
+    link: "https://www.linkedin.com/in/harshad-dudhabarve-3709302a1/",
     icon: FiLinkedin,
     altimgname: "linkedin",
   },
   {
-    link: "https://github.com/AlpayC",
+    link: "https://github.com/nota63",
     icon: FiGithub,
     altimgname: "github",
   },
   {
-    link: "mailto:myemail@com",
+    link: "mailto:vishaldudhabarve105@gmail.com",
     icon: FiMail,
     altimgname: "mail",
   },
@@ -469,12 +501,12 @@ export const contactData = {
   },
   privacyOptIn: {
     checkbox: {
-      de: "Ich stimme zu, dass Alpay meine personenbezogenen Daten (Name und E-Mail-Adresse) verwenden darf, um mit mir Kontakt aufzunehmen.",
-      en: "I agree that Alpay may use my personal data (name and e-mail address) to contact me.",
+      de: "Ich stimme zu, dass Harshad meine personenbezogenen Daten (Name und E-Mail-Adresse) verwenden darf, um mit mir Kontakt aufzunehmen.",
+      en: "I agree that Harshad may use my personal data (name and e-mail address) to contact me.",
     },
     description: {
       de: "Durch Übermittlung dieser Anfrage bestätigen Sie, dass Sie die Datenschutzerklärung gelesen haben",
-      en: "By submitting this request, you acknowledge that you have read the Private Policy",
+      en: "By submitting this request, you acknowledge that you have read the Privacy Policy",
     },
   },
 } as const;
